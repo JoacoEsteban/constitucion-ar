@@ -1,4 +1,4 @@
-import { onClient } from '@/app/client/utils/on-client'
+import { onClient } from '@/client/utils/on-client'
 
 export default function Download () {
   const downloadUrl = '/api/download-pdf'
