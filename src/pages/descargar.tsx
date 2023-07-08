@@ -1,12 +1,17 @@
-import { GetServerSideProps } from 'next'
+export default function Download () {
+  const downloadUrl = '/api/download-pdf'
 
-export const getServerSideProps: GetServerSideProps = async () => {
-  return {
-    redirect: {
-      destination: 'https://www.argentina.gob.ar/sites/default/files/constitucion_0.pdf',
-      permanent: true,
-    }
+  const download = async () => {
+    const res = await fetch(downloadUrl)
+    console.log(res)
   }
-}
 
-export default function Download () {}
+  download()
+
+  return (
+    <main>
+      <title>Descargando PDF</title>
+      Descargando. Si la descarga no comienza hacé click <a href={downloadUrl} download>acá</a>
+    </main>
+  )
+}
