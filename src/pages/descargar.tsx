@@ -3,7 +3,12 @@ export default function Download () {
 
   const download = async () => {
     const res = await fetch(downloadUrl)
-    console.log(res)
+    const blob = await res.blob()
+    const url = window.URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = 'constitucion.pdf'
+    a.click()
   }
 
   download()
