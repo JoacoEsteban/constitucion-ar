@@ -1,10 +1,9 @@
-import { onClient } from '@/client/utils/on-client'
+'use client'
 
 export default function Download () {
   const downloadUrl = '/api/download-pdf'
 
   const download = async () => {
-    await onClient()
     const res = await fetch(downloadUrl)
     const blob = await res.blob()
     const url = window.URL.createObjectURL(blob)
