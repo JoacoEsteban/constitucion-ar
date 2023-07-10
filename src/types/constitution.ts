@@ -34,7 +34,9 @@ export interface Part extends heading {
   sections: Section[]
 }
 
+export type PartOrSection = Part | Section
+
 export interface Constitution extends heading {
-  parts: (Part | Section)[],
+  parts: PartOrSection[],
   finalNote?: string
 }
