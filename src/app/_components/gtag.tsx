@@ -6,7 +6,10 @@ declare global {
 }
 
 export default function Gtag () {
+  if (typeof window === 'undefined') return null
+
   const GTAG_ID = process.env.NEXT_PUBLIC_GTAG_ID
+
   window.dataLayer = window.dataLayer || []
   function gtag (...args: any[]) { window.dataLayer.push(args) }
   gtag('js', new Date())
