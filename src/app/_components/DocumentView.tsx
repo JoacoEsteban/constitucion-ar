@@ -25,28 +25,28 @@ const haArticles = (part: PartOrSection): part is Subsection => {
   return (part as Subsection).articles !== undefined
 }
 
-const Part = (part: PartOrSection, index: number) => {
+const Part = (part: PartOrSection, index: number | string) => {
   if (hasSections(part)) {
     return (
-      <div key={index}>
+      <div key={index + '-sec'}>
         <h3>{part.title}</h3>
-        {part.sections.map(Part)}
+        {part.sections.map((part, i) => Part(part, `${index}-${i}`))}
       </div>
     )
   }
 
   if (hasSubSections(part)) {
     return (
-      <div key={index}>
+      <div key={index + '-sub'}>
         <h4>{part.title}</h4>
-        {part.subsections.map(subSection => Part(subSection as Subsection, index))}
+        {part.subsections.map((subSection, i) => Part(subSection as Subsection, `${index}-${i}`))}
       </div>
     )
   }
 
   if (haArticles(part)) {
     return (
-      <div key={index}>
+      <div key={index + '-art'}>
         <h5>{part.title}</h5>
         {part.articles.map(Article)}
       </div>
@@ -69,7 +69,7 @@ const Article = (article: Article, index: number) => {
         article.list.map((item, index) =>
           <p>
             <b>{index + 1}.</b>
-            <LineSplitter key={index} line={item} brs={1} />
+            <LineSplitter line={item} brs={1} />
           </p>
         )}
     </div>
