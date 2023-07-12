@@ -1,20 +1,20 @@
 import { Constitution } from '@/types/constitution'
 
 export const constitution: Constitution = {
-  title: "CONSTITUCION DE LA NACION ARGENTINA",
+  title: "Constitucion de la Nacion Argentina",
   parts: [
     {
-      title: "PREÁMBULO",
+      title: "Preámbulo",
       sections: [{
         title: null,
         articles: [{ number: 0, text: "Nos los representantes del pueblo de la Nación Argentina, reunidos en Congreso General Constituyente por voluntad y elección de las provincias que la componen, en cumplimiento de pactos preexistentes, con el objeto de constituir la unión nacional, afianzar la justicia, consolidar la paz interior, proveer a la defensa común, promover el bienestar general, y asegurar los beneficios de la libertad, para nosotros, para nuestra posteridad, y para todos los hombres del mundo que quieran habitar en el suelo argentino: invocando la protección de Dios, fuente de toda razón y justicia: ordenamos, decretamos y establecemos esta Constitución, para la Nación Argentina." }]
       }],
     },
     {
-      title: "PRIMERA PARTE",
+      title: "Primera Parte",
       sections: [
         {
-          title: "CAPITULO PRIMERO",
+          title: "Capitulo Primero",
           subtitle: "Declaraciones, derechos y garantías",
           articles: [
             {
@@ -166,16 +166,16 @@ export const constitution: Constitution = {
       ]
     },
     {
-      title: "SEGUNDA PARTE",
-      subtitle: "AUTORIDADES DE LA NACION",
+      title: "Segunda Parte",
+      subtitle: "Autoridades de la Nacion",
       sections: [
         {
-          title: "TITULO PRIMERO",
-          subtitle: "GOBIERNO FEDERAL",
+          title: "Titulo Primero",
+          subtitle: "Gobierno Federal",
           subsections: [
             {
-              title: "SECCION PRIMERA",
-              subtitle: "DEL PODER LEGISLATIVO",
+              title: "Sección Primera",
+              subtitle: "Del Poder Legislativo",
               subsections: [
                 {
                   title: null,
@@ -187,7 +187,7 @@ export const constitution: Constitution = {
                   ],
                 },
                 {
-                  title: "CAPÍTULO PRIMERO",
+                  title: "Capítulo Primero",
                   subtitle: "De la Cámara de Diputados",
                   articles: [
                     {
@@ -229,7 +229,7 @@ export const constitution: Constitution = {
                   ]
                 },
                 {
-                  title: "CAPÍTULO SEGUNDO",
+                  title: "Capítulo Segundo",
                   subtitle: "Del Senado",
                   articles: [
                     {
@@ -271,7 +271,7 @@ export const constitution: Constitution = {
                   ]
                 },
                 {
-                  title: "CAPÍTULO TERCERO",
+                  title: "Capítulo Tercero",
                   subtitle: "Disposiciones comunes a ambas Cámaras",
                   articles: [
                     {
@@ -325,7 +325,7 @@ export const constitution: Constitution = {
                   ]
                 },
                 {
-                  title: "CAPITULO CUARTO",
+                  title: "Capitulo Cuarto",
                   subtitle: "Atribuciones del Congreso",
                   articles: [
                     {
@@ -373,7 +373,7 @@ export const constitution: Constitution = {
                   ]
                 },
                 {
-                  title: "CAPÍTULO QUINTO",
+                  title: "Capítulo Quinto",
                   subtitle: "De la formación y sanción de las leyes",
                   articles: [
                     {
@@ -411,7 +411,7 @@ export const constitution: Constitution = {
                   ]
                 },
                 {
-                  title: "CAPÍTULO SEXTO",
+                  title: "Capítulo Sexto",
                   subtitle: "De la Auditoría General de la Nación",
                   articles: [
                     {
@@ -421,7 +421,7 @@ export const constitution: Constitution = {
                   ]
                 },
                 {
-                  title: "CAPÍTULO SÉPTIMO",
+                  title: "Capítulo Séptimo",
                   subtitle: "Del Defensor del Pueblo",
                   articles: [
                     {
@@ -433,11 +433,11 @@ export const constitution: Constitution = {
               ],
             },
             {
-              title: "SECCIÓN SEGUNDA",
-              subtitle: "DEL PODER EJECUTIVO",
+              title: "Sección Segunda",
+              subtitle: "Del Poder Ejecutivo",
               subsections: [
                 {
-                  title: "CAPÍTULO PRIMERO",
+                  title: "Capítulo Primero",
                   subtitle: "De su naturaleza y duración",
                   articles: [
                     {
@@ -471,7 +471,7 @@ export const constitution: Constitution = {
                   ]
                 },
                 {
-                  title: "CAPÍTULO SEGUNDO",
+                  title: "Capítulo Segundo",
                   subtitle: "De la forma y tiempo de la elección del Presidente y vicepresidente de la Nación",
                   articles: [
                     {
@@ -497,7 +497,7 @@ export const constitution: Constitution = {
                   ]
                 },
                 {
-                  title: "CAPÍTULO TERCERO",
+                  title: "Capítulo Tercero",
                   subtitle: "Atribuciones del Poder Ejecutivo",
                   articles: [
                     {
@@ -527,7 +527,7 @@ export const constitution: Constitution = {
                   ]
                 },
                 {
-                  title: "CAPÍTULO CUARTO",
+                  title: "Capítulo Cuarto",
                   subtitle: "Del jefe de gabinete y demás ministros del Poder Ejecutivo",
                   articles: [
                     {
@@ -576,11 +576,11 @@ export const constitution: Constitution = {
               ]
             },
             {
-              title: "SECCIÓN TERCERA",
-              subtitle: "DEL PODER JUDICIAL",
+              title: "Sección Tercera",
+              subtitle: "Del Poder Judicial",
               subsections: [
                 {
-                  title: "CAPÍTULO PRIMERO",
+                  title: "Capítulo Primero",
                   subtitle: "De su naturaleza y duración",
                   articles: [
                     {
@@ -626,7 +626,7 @@ export const constitution: Constitution = {
                   ]
                 },
                 {
-                  title: "CAPÍTULO SEGUNDO",
+                  title: "Capítulo Segundo",
                   subtitle: "Atribuciones del Poder Judicial",
                   articles: [
                     {
@@ -650,7 +650,7 @@ export const constitution: Constitution = {
               ]
             },
             {
-              title: "SECCIÓN CUARTA",
+              title: "Sección Cuarta",
               subtitle: "Del ministerio público",
               articles: [
                 {
@@ -662,8 +662,8 @@ export const constitution: Constitution = {
           ]
         },
         {
-          title: "TITULO SEGUNDO",
-          subtitle: "GOBIERNOS DE PROVINCIA",
+          title: "Titulo Segundo",
+          subtitle: "Gobiernos de Provincia",
           articles: [
             {
               number: 121,
@@ -698,7 +698,7 @@ export const constitution: Constitution = {
       ]
     },
     {
-      title: "DISPOSICIONES TRANSITORIAS",
+      title: "Disposiciones Transitorias",
       articles: [
         {
           title: "Primera",
