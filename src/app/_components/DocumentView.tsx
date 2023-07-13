@@ -29,7 +29,7 @@ const Part = (part: PartOrSection, index: number | string) => {
   if (hasSections(part)) {
     return (
       <div key={index + '-sec'}>
-        <h3>{part.title}</h3>
+        <h2>{part.title}</h2>
         {part.sections.map((part, i) => Part(part, `${index}-${i}`))}
       </div>
     )
@@ -38,7 +38,7 @@ const Part = (part: PartOrSection, index: number | string) => {
   if (hasSubSections(part)) {
     return (
       <div key={index + '-sub'}>
-        <h4>{part.title}</h4>
+        <h3>{part.title}</h3>
         {part.subsections.map((subSection, i) => Part(subSection as Subsection, `${index}-${i}`))}
       </div>
     )
@@ -47,7 +47,7 @@ const Part = (part: PartOrSection, index: number | string) => {
   if (haArticles(part)) {
     return (
       <div key={index + '-art'}>
-        <h5>{part.title}</h5>
+        <h3>{part.title}</h3>
         {part.articles.map(Article)}
       </div>
     )
@@ -62,16 +62,18 @@ const articleHasList = (article: Article): article is ListArticle => {
 const Article = (article: Article, index: number) => {
   return (
     <div key={index}>
-      {article.title && <h6>{article.title}</h6>}
-      {article.number && <h6>Artículo {article.number}</h6>}
+      {article.title && <h4>{article.title}</h4>}
+      {article.number && <h4>Artículo {article.number}</h4>}
       {article.text && <LineSplitter line={article.text} brs={2} />}
-      {articleHasList(article) &&
-        article.list.map((item, index) =>
-          <p>
-            <b>{index + 1}.</b>
+      {articleHasList(article) && <ol>
+        {article.list.map((item, index) =>
+          <li>
+            {/* <b>{index + 1}.</b> */}
             <LineSplitter line={item} brs={1} />
-          </p>
+          </li>
         )}
+      </ol>
+      }
     </div>
   )
 }
