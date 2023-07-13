@@ -8,7 +8,12 @@ export function DocumentView ({ doc }: { doc: Constitution }) {
       {doc.subtitle && <h2>{doc.subtitle}</h2>}
       <br />
       {doc.parts.map(Part)}
-      {doc.finalNote && <LineSplitter line={doc.finalNote!} brs={2} />}
+      {doc.finalNote && <p className='final-note'>
+        <span>
+          <LineSplitter line={doc.finalNote!} brs={2} />
+        </span>
+      </p>
+      }
     </div>
   )
 }
