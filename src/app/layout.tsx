@@ -1,8 +1,8 @@
 import './style/globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Urbanist } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const urbaniUrbanist = Urbanist({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Constitución Argentina',
@@ -34,7 +34,7 @@ export default function RootLayout ({
         href="/favicon/apple-touch-icon.png"
         sizes="180x180"
       />
-      <body className={inter.className}>{children}</body>
+      <body className={urbaniUrbanist.className}>{children}</body>
     </html>
   )
 }
