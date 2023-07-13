@@ -97,7 +97,7 @@ a {
 
 
 .container {
-  max-width: 1100px;
+  max-width: var(--max-width);
   margin: auto;
 }
 
@@ -124,4 +124,15 @@ ol li::marker {
 
 li:not(:last-child) {
   margin-bottom: .5em;
+}
+
+.final-note {
+  color: #ccc;
+  max-width: max(75%, calc(var(--max-width)/2));
+  margin: auto;
+  margin-top: 4em;
+}
+
+.final-note>* {
+  font-size: .75em;
 }
