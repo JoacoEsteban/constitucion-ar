@@ -1,7 +1,7 @@
 import { Constitution } from '@/types/constitution'
 
 export const constitution: Constitution = {
-  title: "Constitucion de la Nacion Argentina",
+  title: "Constitución de la Nación Argentina",
   parts: [
     {
       title: "Preámbulo",
