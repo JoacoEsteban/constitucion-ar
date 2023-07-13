@@ -114,6 +114,12 @@ h2 {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.5em;
+  }
+}
+
 ol {
   padding: 0 1em;
 
